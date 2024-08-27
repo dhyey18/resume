@@ -40,9 +40,36 @@ body.dark-mode {
     /* Light Gray */
 }
 
+.whatsapp-icon {
+    position: fixed;
+    bottom: 1rem;
+    /* Adjust the bottom distance */
+    right: 1rem;
+    /* Adjust the right distance */
+    z-index: 1000;
+    /* Ensure it's above other elements */
+}
+
+.whatsapp-icon img {
+    width: 3.5rem;
+    /* Adjust the size of the icon */
+    height: 3.5rem;
+    /* Adjust the size of the icon */
+    border-radius: 50%;
+    /* Optional: makes the icon round */
+    transition: transform 0.3s ease;
+    /* Smooth scaling effect */
+}
+
+.whatsapp-icon img:hover {
+    transform: scale(1.1);
+    /* Slightly enlarges the icon on hover */
+}
+
+
 /* Header Section */
 header {
-    background: linear-gradient(135deg, #6100ff, #6610f2);
+    background: linear-gradient(135deg, #7452aa, #6610f2);
     /* Vibrant gradient */
     color: #fff;
     text-align: center;
@@ -159,9 +186,9 @@ section:hover {
 
 section h3 {
     font-size: 2.5rem;
-    color: #6100ff;
+    color: #7452aa;
     margin-bottom: 1.5rem;
-    border-bottom: 3px solid #6610f2;
+    border-bottom: 3px solid #7452aa;
     padding-bottom: 0.6rem;
 }
 
@@ -180,7 +207,7 @@ body.dark-mode section h3 {
 }
 
 .skill-list li {
-    background: #6100ff;
+    background: #7452aa;
     padding: 0.85rem 1.4rem;
     border-radius: 12px;
     font-weight: 500;
@@ -208,7 +235,7 @@ body.dark-mode .skill-list li {
 .project h4,
 .education-item p {
     font-size: 1.9rem;
-    color: #6100ff;
+    color: #7452aa;
     margin-bottom: 0.9rem;
     font-weight: 600;
 }
@@ -229,7 +256,7 @@ body.dark-mode .education-item p {
 
 /* Footer Section */
 footer {
-    background: #6100ff;
+    background: #7452aa;
     color: #ffffff;
     text-align: center;
     padding: 2.5rem 0;
