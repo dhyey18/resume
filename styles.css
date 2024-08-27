@@ -1,0 +1,387 @@
+/* Global Reset and Font Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    /* Removes bullets */
+    padding-left: 0;
+    /* Optional: removes the default left padding */
+    margin-left: 0;
+    /* Optional: removes the default left margin */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    /* Light mode default background */
+    color: #212529;
+    /* Light mode default text color */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Light and Dark Mode Styles */
+body.light-mode {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+body.dark-mode {
+    background-color: #1e1e1e;
+    /* Very Dark Gray */
+    color: #e0e0e0;
+    /* Light Gray */
+}
+
+/* Header Section */
+header {
+    background: linear-gradient(135deg, #6100ff, #6610f2);
+    /* Vibrant gradient */
+    color: #fff;
+    text-align: center;
+    padding: 4rem 0;
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+    animation: slideIn 1.2s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+header h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    animation: fadeInDown 1.5s ease-in-out;
+}
+
+header h2 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+    animation: fadeInDown 1.8s ease-in-out;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    animation: fadeInDown 2s ease-in-out;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 0.8rem;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: #f8f9fa;
+}
+
+#theme-toggle {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.8rem;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 1.5rem;
+    animation: fadeInDown 2.2s ease-in-out;
+}
+
+#theme-toggle:hover {
+    transform: scale(1.1);
+}
+
+body.dark-mode #theme-toggle {
+    background-color: #ffffff;
+    /* Electric Blue */
+    color: #121212;
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+section {
+    background: #ffffff;
+    margin-bottom: 2.5rem;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.4s ease;
+    animation: fadeInUp 1.4s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+body.dark-mode section {
+    background-color: #2c2c2c;
+    /* Dark Gray */
+}
+
+section:hover {
+    transform: translateY(-12px);
+}
+
+section h3 {
+    font-size: 2.5rem;
+    color: #6100ff;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid #6610f2;
+    padding-bottom: 0.6rem;
+}
+
+body.dark-mode section h3 {
+    color: #fff;
+    /* Electric Blue */
+    border-color: #00bfff;
+}
+
+/* Skill List */
+.skill-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    animation: fadeInUp 1.6s ease-out;
+}
+
+.skill-list li {
+    background: #6100ff;
+    padding: 0.85rem 1.4rem;
+    border-radius: 12px;
+    font-weight: 500;
+    color: #fff;
+    transition: background-color 0.4s ease, transform 0.4s ease;
+}
+
+body.dark-mode .skill-list li {
+    background-color: #6610f2;
+    /* Deep Purple */
+}
+
+.skill-list li:hover {
+    transform: scale(1.08);
+}
+
+/* Job, Project, and Education Styles */
+.job,
+.project,
+.education-item {
+    margin-bottom: 2.5rem;
+}
+
+.job h4,
+.project h4,
+.education-item p {
+    font-size: 1.9rem;
+    color: #6100ff;
+    margin-bottom: 0.9rem;
+    font-weight: 600;
+}
+
+body.dark-mode .job h4,
+body.dark-mode .project h4,
+body.dark-mode .education-item p {
+    color: #fff;
+    /* Electric Blue */
+}
+
+.job ul,
+.project p {
+    list-style-type: none;
+    margin-left: 1.5rem;
+    line-height: 1.8;
+}
+
+/* Footer Section */
+footer {
+    background: #6100ff;
+    color: #ffffff;
+    text-align: center;
+    padding: 2.5rem 0;
+    margin-top: 4rem;
+    border-top-left-radius: 50% 20%;
+    border-top-right-radius: 50% 20%;
+    transition: background-color 0.4s ease;
+    animation: slideIn 1s ease-out;
+}
+
+body.dark-mode footer {
+    background-color: #003366;
+    /* Midnight Blue */
+}
+
+footer p {
+    font-size: 1.3rem;
+}
+
+/* Responsive Styles for Mobile View */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 3rem;
+    }
+
+    header h2 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+
+    section h3 {
+        font-size: 2rem;
+    }
+
+    .job h4,
+    .project h4,
+    .education-item p {
+        font-size: 1.4rem;
+    }
+
+    footer p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Responsive Styles for Extra Small Devices */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header h2 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    section h3 {
+        font-size: 1.8rem;
+    }
+
+    .job h4,
+    .project h4,
+    .education-item p {
+        font-size: 1.2rem;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+
+    header h1,
+    header h2,
+    header p {
+        animation: slideInFromLeft 1s ease-out;
+    }
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        animation: fadeInScale 1s ease-out;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.05);
+        opacity: 0.7;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+
+    #theme-toggle {
+        animation: pulse 1.5s infinite;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+    /* Additional smooth scrolling if needed */
+}

@@ -1,0 +1,247 @@
+Global Reset and Font Settings
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Light and Dark Mode Styles */
+body.light-mode {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #e9ecef;
+}
+
+/* Header Section */
+header {
+    background: linear-gradient(135deg, #007bff, #6610f2); /* Vibrant gradient */
+    color: #fff;
+    text-align: center;
+    padding: 4rem 0;
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+    animation: slideIn 1.2s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+header h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    animation: fadeInDown 1.5s ease-in-out;
+}
+
+header h2 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+    animation: fadeInDown 1.8s ease-in-out;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    animation: fadeInDown 2s ease-in-out;
+}
+
+header a {
+    color: #ffc107;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 0.8rem;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: #f8f9fa;
+}
+
+#theme-toggle {
+    background-color: #ffc107;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.8rem;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 1.5rem;
+    animation: fadeInDown 2.2s ease-in-out;
+}
+
+#theme-toggle:hover {
+    transform: scale(1.1);
+}
+
+body.dark-mode #theme-toggle {
+    background-color: #ffc107;
+    color: #343a40;
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+section {
+    background: #ffffff;
+    margin-bottom: 2.5rem;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.4s ease;
+    animation: fadeInUp 1.4s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+body.dark-mode section {
+    background-color: #1f1f1f;
+}
+
+section:hover {
+    transform: translateY(-12px);
+}
+
+section h3 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid #6610f2;
+    padding-bottom: 0.6rem;
+}
+
+body.dark-mode section h3 {
+    color: #ffc107;
+    border-color: #ffc107;
+}
+
+/* Skill List */
+.skill-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    animation: fadeInUp 1.6s ease-out;
+}
+
+.skill-list li {
+    background: #007bff;
+    padding: 0.85rem 1.4rem;
+    border-radius: 12px;
+    font-weight: 500;
+    color: #fff;
+    transition: background-color 0.4s ease, transform 0.4s ease;
+}
+
+body.dark-mode .skill-list li {
+    background-color: #6610f2;
+}
+
+.skill-list li:hover {
+    transform: scale(1.08);
+}
+
+/* Job, Project, and Education Styles */
+.job, .project, .education-item {
+    margin-bottom: 2.5rem;
+}
+
+.job h4, .project h4, .education-item p {
+    font-size: 1.9rem;
+    color: #007bff;
+    margin-bottom: 0.9rem;
+    font-weight: 600;
+}
+
+body.dark-mode .job h4, body.dark-mode .project h4, body.dark-mode .education-item p {
+    color: #ffc107;
+}
+
+.job ul, .project p {
+    margin-left: 1.5rem;
+    line-height: 1.8;
+}
+
+/* Footer Section */
+footer {
+    background: #007bff;
+    color: #ffffff;
+    text-align: center;
+    padding: 2.5rem 0;
+    margin-top: 4rem;
+    border-top-left-radius: 50% 20%;
+    border-top-right-radius: 50% 20%;
+    transition: background-color 0.4s ease;
+    animation: slideIn 1s ease-out;
+}
+
+body.dark-mode footer {
+    background-color: #6610f2;
+}
+
+footer p {
+    font-size: 1.3rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 3rem;
+    }
+
+    header h2 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+    section h3 {
+        font-size: 2.2rem;
+    }
+
+    .job h4, .project h4, .education-item p {
+        font-size: 1.6rem;
+    }
+
+    footer p {
+        font-size: 1.1rem;
+    }
+}
