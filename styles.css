@@ -139,6 +139,18 @@ body.dark-mode header a {
     color: #ffffff;
 }
 
+/* e3dcef */
+#header-background {
+    /* background: linear-gradient(115deg, #f4f0f6, #b992c3); */
+    /* background: linear-gradient(138deg, #f4f0f6, #b15ac7); */
+    /* background: linear-gradient(135deg, #d2b8e1, #c7a6d0);  */
+    background: linear-gradient(130deg, #ffffff, #af74bf);
+}
+
+body.dark-mode #header-background {
+    background: linear-gradient(135deg, #3a2a6b, #7d3f9c); /* Dark purple gradient */
+}
+
 
 header a:hover {
     color: #f8f9fa;
