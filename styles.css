@@ -128,7 +128,7 @@ header p {
 }
 
 header a {
-    color: #000000;
+    color: #000;
     text-decoration: none;
     font-weight: 500;
     margin: 0 0.8rem;
@@ -139,12 +139,14 @@ body.dark-mode header a {
     color: #ffffff;
 }
 
-/* e3dcef */
 #header-background {
-    /* background: linear-gradient(115deg, #f4f0f6, #b992c3); */
-    /* background: linear-gradient(138deg, #f4f0f6, #b15ac7); */
-    /* background: linear-gradient(135deg, #d2b8e1, #c7a6d0);  */
-    background: linear-gradient(130deg, #ffffff, #af74bf);
+    /* background: linear-gradient(135deg, #ffffff, #b471c7);  */
+    color: #7452aa;
+}
+
+body.dark-mode #header-background {
+    /* background: linear-gradient(135deg, #ffffff, #b471c7);  */
+    color: #ffffff;
 }
 
 body.dark-mode #header-background {
@@ -153,7 +155,7 @@ body.dark-mode #header-background {
 
 
 header a:hover {
-    color: #f8f9fa;
+    color: #7452aa;
 }
 
 #theme-toggle {
@@ -228,7 +230,7 @@ section h3 {
 body.dark-mode section h3 {
     color: #fff;
     /* Electric Blue */
-    border-color: #00bfff;
+    border-color: linear-gradient(130deg, #ffffff, #ba8dc7);;
 }
 
 /* Skill List */
@@ -241,15 +243,19 @@ body.dark-mode section h3 {
 
 .skill-list li {
     background: #7452aa;
+    /* background: linear-gradient(130deg, #ffffff, #ba8dc7); */
     padding: 0.85rem 1.4rem;
     border-radius: 12px;
     font-weight: 500;
-    color: #fff;
+    color: #ffffff;
     transition: background-color 0.4s ease, transform 0.4s ease;
 }
 
 body.dark-mode .skill-list li {
-    background-color: #6610f2;
+    /* background: #6610f2; */
+    color: white;
+    background: linear-gradient(135deg, #3a2a6b, #7d3f9c);
+
     /* Deep Purple */
 }
 
