@@ -14,6 +14,22 @@ ul {
     /* Optional: removes the default left margin */
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem; /* Adds some padding at the top when scrolling to a section */
+}
+
+.scroll-animation {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scroll-animation.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f8f9fa;
