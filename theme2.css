@@ -128,17 +128,12 @@ header p {
 }
 
 header a {
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
     font-weight: 500;
     margin: 0 0.8rem;
     transition: color 0.3s ease;
 }
-
-body.dark-mode header a {
-    color: #ffffff;
-}
-
 
 header a:hover {
     color: #f8f9fa;
@@ -296,51 +291,6 @@ body.dark-mode footer {
 footer p {
     font-size: 1.3rem;
 }
-
-/* Adding glassmorphism effect */
-.glassmorphism {
-    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
-    border-radius: 20px;
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Subtle shadow */
-    backdrop-filter: blur(10px); /* Blur effect */
-    -webkit-backdrop-filter: blur(10px); /* Safari support */
-    border: 1px solid rgba(255, 255, 255, 0.18);
-}
-
-/* Light and Dark Mode Adjustments */
-body.light-mode .glassmorphism {
-    background: rgba(255, 255, 255, 0.6); /* Lighter semi-transparent background */
-    color: #212529; /* Adjust text color for visibility */
-}
-
-body.dark-mode .glassmorphism {
-    background: rgba(18, 18, 18, 0.6); /* Darker semi-transparent background */
-    color: #e0e0e0; /* Adjust text color for visibility */
-}
-
-/* Applying the glassmorphism effect to specific sections */
-header,
-section,
-footer {
-    background: rgba(255, 255, 255, 0.1); /* Light background for glassmorphism effect */
-    border-radius: 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for the glassmorphism effect */
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-
-/* Adjusting hover effects for glassmorphism */
-section:hover {
-    transform: translateY(-12px) scale(1.02); /* Slight scaling on hover for a more dynamic effect */
-}
-
-#theme-toggle {
-    backdrop-filter: blur(12px); /* Extra blur for the theme toggle button */
-    -webkit-backdrop-filter: blur(12px);
-}
-
 
 /* Responsive Styles for Mobile View */
 @media (max-width: 768px) {
